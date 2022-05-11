@@ -21,7 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -30,7 +30,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -103,20 +103,26 @@
   <ItemGroup>
     <Content Include="..\DCAD2022\Source\account_apprl_year.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>account_apprl_year.csv</Link>
     </Content>
     <Content Include="..\DCAD2022\Source\account_info.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>account_info.csv</Link>
     </Content>
     <Content Include="..\DCAD2022\Source\land.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>land.csv</Link>
     </Content>
     <Content Include="..\DCAD2022\Source\res_addl.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>res_addl.csv</Link>
     </Content>
     <Content Include="..\DCAD2022\Source\res_detail.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>res_detail.csv</Link>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
