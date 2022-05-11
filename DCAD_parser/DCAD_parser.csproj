@@ -101,19 +101,19 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\DCAD2017\Source\account_apprl_year.csv">
+    <Content Include="..\DCAD2022\Source\account_apprl_year.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\DCAD2017\Source\account_info.csv">
+    <Content Include="..\DCAD2022\Source\account_info.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\DCAD2017\Source\land.csv">
+    <Content Include="..\DCAD2022\Source\land.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\DCAD2017\Source\res_addl.csv">
+    <Content Include="..\DCAD2022\Source\res_addl.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\DCAD2017\Source\res_detail.csv">
+    <Content Include="..\DCAD2022\Source\res_detail.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
