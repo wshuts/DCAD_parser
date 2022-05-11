@@ -8,9 +8,9 @@ using System.Windows;
 [assembly: AssemblyTitle("DCAD_parser")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Nokia Siemens Networks")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("DCAD_parser")]
-[assembly: AssemblyCopyright("Copyright © Nokia Siemens Networks 2011")]
+[assembly: AssemblyCopyright("Copyright © William Shuts 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
