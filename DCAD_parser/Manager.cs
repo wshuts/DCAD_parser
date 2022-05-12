@@ -55,15 +55,15 @@ namespace DCAD_parser
                 from line in allLines
                 let screen = line.Split(',')
                 where screen[2] == "\"RES\""
-                where screen[21] == "\"5OSK01\""
+                where screen[23] == "\"5OSK01\""
                 select new AccountInfo()
                 {
                     AccountNum = screen[0],
                     DivisionCd = screen[2],
-                    Mapsco = screen[20],
-                    NbhdCd = screen[21],
-                    Legal1 = screen[22],
-                    DeedTxfrDate = screen[27]
+                    Mapsco = screen[22],
+                    NbhdCd = screen[23],
+                    Legal1 = screen[24],
+                    DeedTxfrDate = screen[29]
                 };
 
             accountsInfo = queryAccountsInfo.ToDictionary(p => p.AccountNum);
@@ -191,7 +191,7 @@ namespace DCAD_parser
             var queryAccountsComps =
                 from line in allLines
                 let screen = line.Split(',')
-                where Math.Abs(double.Parse(screen[17].Trim('"')) - 34) < 2
+                where Math.Abs(double.Parse(screen[17].Trim('"')) - 39) < 2
                 where double.Parse(screen[19].Trim('"')) < 1284
                 where double.Parse(screen[19].Trim('"')) > 1264
                 where double.Parse(screen[13].Trim('"')) > 6999
